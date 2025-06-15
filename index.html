@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Radio Stream</title>
+    <title>Radio Stream</title>
 </head>
 <body>
-    <h1>Willkommen zu Ekkto's Radio Stream!</h1>
-    <audio id="audioPlayer" controls autoplay>
-        <source src="https://22653.live.streamtheworld.com/ANTYRADIOAAC.aac" type="audio/mpeg">
-        Your browser does not support the audio element.
+    <h1>Anty Radio wird jetzt abgespielt...</h1>
+    
+    <!-- Audio-Tag zum Starten des Streams -->
+    <audio autoplay>
+        <source src="http://an03.cdn.eurozet.pl/ant-waw.mp3" type="audio/mp3">
+        Ihr Browser unterstützt das Abspielen des Streams nicht.
     </audio>
-    <script>
-        document.getElementById('audioPlayer').play().catch(function(error) {
-            console.log('Autoplay konnte nicht gestartet werden:', error);
-        });
-    </script>
 </body>
-</html>    
+</html>
